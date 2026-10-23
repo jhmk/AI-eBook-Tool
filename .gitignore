@@ -1,0 +1,53 @@
+# Dependencies / build output
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Tauri / Rust build artifacts
+src-tauri/target/
+target/
+
+# Bundled runtimes and local model/runtime artifacts
+src-tauri/runtime/
+models/
+.ollama/
+
+# Local projects, imported documents, indexes and conversations
+projects/
+data/
+storage/
+index/
+indexes/
+imports/
+conversations/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Private/source documents and large local test material
+*.pdf
+*.epub
+*.mobi
+*.azw3
+THE-CIVIL-ENGINEERING-HANDBOOK.pdf
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*secret*
+*token*
+*.pem
+*.key
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

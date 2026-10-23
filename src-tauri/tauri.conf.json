@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AI eBook Tool",
+  "version": "0.1.0",
+  "identifier": "com.aiebooktool.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AI eBook Tool",
+        "width": 1400,
+        "height": 900
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "resources": ["runtime/ollama/**/*"]
+  }
+}
